@@ -332,10 +332,10 @@ grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   font-weight: normal;
 }
 
-/* @media screen and (min-width: 400px) {
+@media screen and (min-width: 320px) {
   
   .pagina{
-   width: 100%;
+   overflow:hidden;
   }
   .pagina-1{
     background-size: couver;
@@ -386,4 +386,4 @@ grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 @media screen and (min-width:800px) {
   
-} */
+}
