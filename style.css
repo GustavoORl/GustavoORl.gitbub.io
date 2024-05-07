@@ -1,0 +1,389 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat';
+}
+
+@font-face{
+  font-family: "Montserrat";
+  src: url('./fontes/Montserrat-VariableFont_wght.ttf');
+}
+
+
+body {
+	
+	/* background: orange; */
+  background: grey;
+}
+
+.pagina{
+  height: 5000px;
+  margin: 0px 2rem;
+  -webkit-box-shadow: -3px 10px 10px 6px rgba(0,0,0,0.65);
+  -moz-box-shadow: -3px 10px 10px 6px rgba(0,0,0,0.65);
+  box-shadow: -3px 10px 10px 6px rgba(0,0,0,0.65);
+ 
+  
+} 
+
+.pagina-1 {
+
+  background: url('https://www.caraguatatuba.sp.gov.br/pmc/wp-content/uploads/2017/07/35810301490_9eeb94b3cd_o.jpg'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container-1 {
+  height: 650px;
+  display: grid;
+  grid-template-columns: 3fr 3fr 5fr;
+  background-color: rgba(35, 29, 32, 0.61);
+  border: 1px solid black;
+  h1 {
+    font-size: 10rem;
+    color: white;
+  }
+  
+  h2 {
+    font-size: 2em;
+    color: white;
+  }
+  
+  p {
+    font-size: 0.7em;
+    color:white;
+  }
+}
+
+.menu-esquerdo{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.menu-direito{
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.container-2{
+  display: grid;
+  border: 1px solid black;
+  grid-template-columns: 4fr 3fr;
+  grid-template-rows:350px 300px ;
+  grid-template-areas:
+    "cima-esq"
+    "baixo-esq";  
+  h1{
+    color: #002c53;
+    font-size: 3rem;
+    padding-bottom: 30px;
+  }
+  h2{
+    color:white;
+    text-align: start;  
+    padding: 15px;
+    padding-left: 100px;
+
+  }
+  li{
+    
+    color: white;
+    padding: 5px;
+    text-align:start;
+    padding-left: 100px;
+    
+    
+  }
+  p{
+    text-align: justify;
+    padding: 20px;
+    font-size: 15px;
+  }
+
+}
+
+.container-3{
+  background: url('https://www.caraguatatuba.sp.gov.br/pmc/wp-content/uploads/2019/06/Foto-2-1-e1560189789305.jpg');
+  background-size: cover;
+  background-repeat: repeat;
+  height: 650px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows:350px 300px ;
+  grid-template-areas:
+    "cima-dir"
+    "baixo-dir";  
+}
+
+
+.cima-esq {
+  grid-area: cima-esq;
+  background-color: #f5f5f5;
+  padding-top: 50px;
+  border: 1px solid black;
+}
+
+.cima-dir {
+  grid-area: cima-dir;
+  background-color: rgba(35, 29, 32, 0.61);
+}
+
+.baixo-esq {
+  grid-area: baixo-esq;
+  background-color: #002c53;
+  list-style-position: inside; 
+  padding-top: 50px;
+  border: 1px solid black;
+  /*display: flex;
+  justify-content: center;*/
+
+}
+
+.baixo-dir {
+  grid-area: baixo-dir;
+  background-color: rgba(35, 29, 32, 0.61);
+  list-style-position: inside; 
+  padding-top: 50px;
+  /*display: flex;
+  justify-content: center;*/
+}
+
+
+.container-4{
+	display: grid;
+  border: 1px solid black;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows:450px 200px ;
+  grid-template-areas:
+    "cima cima cima cima cima"
+    "a b c d d";  
+    h1{
+      font-size: 7rem;
+      color: #002c53;
+       padding-top: 100px; 
+       padding-left: 100px;
+    }
+    h2{
+      font-size: 5rem;
+      display: flex;
+      text-align: start;
+      color: #002c53;
+      position: absolute;
+      top: 195px;
+      left: 125px;
+    }
+    h3{
+      color: white;
+      font-size: 18px;
+    }
+    p{
+      padding:50px;
+      font-size: 15px;
+
+    }
+    li{
+      list-style-position: inside; 
+      color: white;
+    }
+}
+
+.texto1{
+  position: relative;
+  display:block;
+  text-align: justify;
+  height: 450px;
+}
+.texto2{
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  padding-right: 100px;
+  
+}
+
+.botao1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: -10px;
+  left: 100px;
+  height: 2px;
+  width: 250px;
+  background-color: #002c53;
+  border: 18px solid #002c53;
+  border-radius: 10px;
+}
+
+
+.cima {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  grid-area: cima;
+  background-color: #f5f5f5;
+  border: 1px solid black;
+  /* display: flex;
+  justify-content: start;
+  align-items: center; */
+
+}
+
+.a {
+  grid-area: a;
+  background-color: #002c53;
+  padding-top: 20px;
+}
+
+.b {
+  grid-area: b;
+  background-color: #002c53;
+  padding-top: 20px;
+}
+
+.c {
+  grid-area: c;
+  background-color: #002c53;
+  padding-top: 20px;
+}
+
+.d {
+  grid-area: d;
+  background-color: #002c53;
+}
+
+
+.container-5{
+display:grid;
+border: 1px solid black;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows:500px 150px ;
+  grid-template-areas:
+    "lateral lateral emcima emcima emcima"
+    "lateral lateral embaixo embaixo embaixo";  
+}
+
+.dolado{
+  height: 650px;
+  background-color: rgba(35, 29, 32, 0.61);
+}
+.lateral{
+  grid-area: lateral;
+  background: url('./fotos/foto.png');
+  background-size: cover;
+  border: 1px solid black;
+  
+
+}
+.emcima{
+  grid-area: emcima;
+  position: relative;
+  background-color: #f5f5f5;
+}
+.embaixo{
+  grid-area: embaixo;
+  background-color: #002c53;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+
+  i{
+    padding: 25px;
+  }
+}
+
+.botao2{
+  position: absolute;
+  bottom: -10px;
+  left: 60px;
+  display: flex;
+  align-items: center;
+  height: 20px;
+  border: 15px solid #002c53;
+  border-radius: 10px;
+  color: white;
+
+}
+
+.item {
+  /* border: 1px solid #00f4bf; */
+  text-align: center;
+  font-size: 1.25em;
+  font-weight: normal;
+  /* height: 650px; */
+  
+}
+.lado {
+  /* border: 1px solid #00f4bf; */
+  text-align: center;
+  font-size: 1.25em;
+  font-weight: normal;
+}
+
+.baixo {
+  /* border: 1px solid #00f4bf; */
+  text-align: center;
+  font-size: 1.25em;
+  font-weight: normal;
+}
+
+@media screen and (min-width: 400px) {
+  
+  .pagina{
+   width: 100%;
+  }
+  .pagina-1{
+    background-size: couver;
+    height: 240px;
+  }
+  .container-1{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 240px;
+    h1{font-size: 10px;}
+    h2{font-size: 10px;}
+  }
+  .container-2{
+    display:grid;
+    grid-template-columns: 1fr;
+    h1{font-size: 10px;}
+    h2{font-size: 10px}
+    p{font-size: 10px;}
+    li{font-size: 10px;}
+  }
+  .container-3{
+    background-size: couver;
+    background-repeat: no-repeat;
+    grid-template-rows: 233px 233px;
+    height: 466px;
+    .cima-dir{height: 233px;}
+    .baixo-dir{height: 233px;
+    padding-top:0px;}
+  }
+  .container-4{
+    .cima{
+      display: grid;
+      grid-template-rows: 50px 400px;
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
+    .texto2{
+      padding: 0px;
+    }
+    .botao1{left:10vw;}
+   
+    h1{font-size: 30px; padding: 0;}
+    h2{font-size: 10px; padding: 0; display:block;}
+    p{font-size: 10px;}
+    iframe{width: 300px; height: 200px;}
+  }
+  
+}
+@media screen and (min-width:800px) {
+  
+}
