@@ -464,9 +464,10 @@ grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   
 }
    .container-6{
-    height: 249px;
-    padding-bottom: 50px;
+    height: 600px;
+    padding-bottom: 100px;
   }
+   .rodape{p{font-size:10px};}
 }
 @media screen and (min-width:800px) {
   
