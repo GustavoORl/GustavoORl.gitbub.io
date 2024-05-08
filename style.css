@@ -18,7 +18,6 @@ body {
 }
 
 .pagina{
-  height: 5000px;
   margin: 0px 2rem;
   -webkit-box-shadow: -3px 10px 10px 6px rgba(0,0,0,0.65);
   -moz-box-shadow: -3px 10px 10px 6px rgba(0,0,0,0.65);
@@ -154,13 +153,8 @@ align-items: center;
 
 
 .container-4{
-	display: grid;
   border: 1px solid black;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows:450px 200px ;
-  grid-template-areas:
-    "cima cima cima cima cima"
-    "a b c d d";  
+
     h1{
       font-size: 7rem;
       color: #002c53;
@@ -232,6 +226,11 @@ align-items: center;
   align-items: center; */
 
 }
+.abaixo{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "a b c ";
+}
 
 .a {
   grid-area: a;
@@ -251,10 +250,7 @@ align-items: center;
   padding-top: 20px;
 }
 
-.d {
-  grid-area: d;
-  background-color: #002c53;
-}
+
 
 
 .container-5{
@@ -268,7 +264,7 @@ grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .dolado{
-  height: 650px;
+  height: 100%;
   background-color: rgba(35, 29, 32, 0.61);
 }
 .lateral{
@@ -360,6 +356,7 @@ grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   padding:20px;
   font-size: 40px;}
 
+
 .item {
   /* border: 1px solid #00f4bf; */
   text-align: center;
@@ -382,10 +379,10 @@ grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   font-weight: normal;
 }
 
-@media screen and (min-width: 50px) {
+@media screen and (max-width: 50px) {
   
   .pagina{
-   overflow:hidden;
+   overflow: hidden;
    margin: 0 1em;
   }
   .pagina-1{
@@ -432,8 +429,8 @@ grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     h2{font-size: 10px; padding: 0; display:block;}
     p{font-size: 10px;}
     iframe{width: 300px; height: 200px;}
-  
-   .abaixo{
+
+    .abaixo{
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows:1fr 1fr 1fr  ;
