@@ -469,6 +469,6 @@ grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
    .rodape{p{font-size:10px};}
 }
-@media screen and (min-width:800px) {
+/* @media screen and (min-width:800px) {
   
-}
+} */
