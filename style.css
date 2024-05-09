@@ -293,14 +293,21 @@ grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
 }
 .fa-facebook:hover{
+  transform: scale(1.13);
   
 }
 .fa-instagram:hover{
-  
-  
-
+  transform: scale(1.13);
 }
-
+.fa-x-twitter:hover{
+  transform: scale(1.13);
+}
+.fa-youtube:hover{
+  transform: scale(1.13);
+}
+.fa-tiktok:hover{
+  transform: scale(1.13);
+}
 .botao2{
   position: absolute;
   bottom: -10px;
@@ -366,8 +373,7 @@ grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   font-size: 40px;}
 
  .fa-github:hover{
-  background-color: black;
-  border-radius: 50px;
+  transform: scale(1.13);
  }
 
 
