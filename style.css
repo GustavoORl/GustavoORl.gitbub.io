@@ -292,6 +292,14 @@ grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     padding: 25px;
   }
 }
+.fa-facebook:hover{
+  
+}
+.fa-instagram:hover{
+  
+  
+
+}
 
 .botao2{
   position: absolute;
@@ -353,8 +361,14 @@ grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   padding-right: 20px;
  }
  .fa-github{
-  padding:20px;
+  margin:20px;
+  padding: 10px;
   font-size: 40px;}
+
+ .fa-github:hover{
+  background-color: black;
+  border-radius: 50px;
+ }
 
 
 .item {
