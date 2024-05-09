@@ -40,12 +40,12 @@ body {
   background-color: rgba(35, 29, 32, 0.61);
   border: 1px solid black;
   h1 {
-    font-size: 10rem;
+    font-size: 10rem; 
     color: white;
   }
   
   h2 {
-    font-size: 2em;
+    font-size: 2em;     
     color: white;
   }
   
@@ -379,7 +379,7 @@ grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   font-weight: normal;
 }
 
-@media screen and (min-width: 50px) {
+@media screen and (max-width: 576px) {
   
   .pagina{
    overflow: hidden;
@@ -387,12 +387,12 @@ grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
   .pagina-1{
     background-size: couver;
-    height: 240px;
+    height: 75vw;
   }
   .container-1{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
-    height: 240px;
+    height: 75vw;
     h1{font-size: 10px;}
     h2{font-size: 10px;}
   }
@@ -400,18 +400,30 @@ grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     display:grid;
     grid-template-columns: 1fr;
     h1{font-size: 10px;}
-    h2{font-size: 10px}
     p{font-size: 10px;}
-    li{font-size: 10px;}
+
+    .baixo-esq{
+      display: grid;
+      justify-content: center;
+      li{padding-left: 0px; font-size: 10px;}
+      h2{font-size: 10px; padding-left: 0;}
+      
+    }
+ 
+    
+    
   }
   .container-3{
-    background-size: couver;
+    background-size: cover;
     background-repeat: no-repeat;
     grid-template-rows: 233px 233px;
     height: 466px;
     .cima-dir{height: 233px;}
-    .baixo-dir{height: 233px;
-    padding-top:0px;}
+    .baixo-dir{height: 233px; padding-top:0px;
+      display: grid;
+      justify-content: center;
+      li{padding-left: 0px; font-size: 10px;}
+      h2{font-size: 10px; padding-left: 0;}}
   }
   .container-4{
     .cima{
@@ -469,6 +481,18 @@ grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
    .rodape{p{font-size:10px};}
 }
-/* @media screen and (min-width:800px) {
+@media screen and (min-width:576px) and (max-width:767px) {
   
-} */
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {
+  
+
+}
+@media screen and (min-width:992px) and (max-width:1199px) {
+  
+}
+
+@media screen and (min-width:1200px){
+  
+}
