@@ -6,7 +6,7 @@
 * [Acesso ao Projeto](#acesso-ao-projeto)
 * [Tecnologias utilizadas](#tecnologias-utilizadas)
 * [Pessoas Contribuidoras](#pessoas-contribuidoras)
-* [Pessoas Desenvolvedoras do Projeto](#desenvolvido-por)
+* [Pessoas Desenvolvedoras do Projeto](#desenvolvido-por-:)
 * [Conclusão](#conclusão)
 
 
@@ -38,7 +38,7 @@
   <li><a href="https://github.com/GustavoORl"> Gustavo Ribeiro</a></li>
 </ul>
 
-<h3>DESENVOLVIDO POR: <a href="https://github.com/GustavoORl"> GUSTAVO RIBEIRO </a></h3>
+<h2>DESENVOLVIDO POR: <a href="https://github.com/GustavoORl"> GUSTAVO RIBEIRO </a></h2>
 
 <h3>CONCLUSÃO</h3>
 <p>Projeto criado puramente para ajudar uma amiga a realizar um sonho! Agradeço a todos que visualizaram ou que mandaram algum feedback, sou grato a todos!</p>
