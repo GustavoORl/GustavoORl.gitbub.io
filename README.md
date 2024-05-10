@@ -1,12 +1,12 @@
 # Índice 
 
-* [Título e Imagem de capa](#Projeto_ellen_cristina_dias_braga)
+* [Título e Imagem de capa](#projeto-ellen-cristina-dias-braga)
 * [Descrição do Projeto](#descrição-do-projeto)
 * [Status do Projeto](#status-do-Projeto)
 * [Acesso ao Projeto](#acesso-ao-projeto)
 * [Tecnologias utilizadas](#tecnologias-utilizadas)
 * [Pessoas Contribuidoras](#pessoas-contribuidoras)
-* [Pessoas Desenvolvedoras do Projeto](#desenvolvido_por)
+* [Pessoas Desenvolvedoras do Projeto](#desenvolvido-por:)
 * [Conclusão](#conclusão)
 
 
