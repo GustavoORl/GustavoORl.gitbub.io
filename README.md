@@ -6,7 +6,7 @@
 * [Acesso ao Projeto](#acesso-ao-projeto)
 * [Tecnologias utilizadas](#tecnologias-utilizadas)
 * [Pessoas Contribuidoras](#pessoas-contribuidoras)
-* [Pessoas Desenvolvedoras do Projeto](#desenvolvido-por-:)
+* [Pessoas Desenvolvedoras do Projeto](#desenvolvido-por)
 * [Conclusão](#conclusão)
 
 
