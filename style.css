@@ -298,13 +298,14 @@ grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 .embaixo{
   grid-area: embaixo;
   background-color: #002c53;
-  display:flex;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
   border: 1px solid black;
-
+  P{font-size: calc(0.5rem + 0.5vw);}
   i{
-    padding: 25px;
+    padding: 10px;
+    font-size: calc(0.7rem + 0.7vw);
   }
 }
 .fa-facebook:hover{
@@ -333,6 +334,9 @@ grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   border: 15px solid #002c53;
   border-radius: 10px;
   color: white;
+  h3{
+    font-size: calc(0.6rem + 0.7vw);
+  }
 
 }
 .container-6{
@@ -413,6 +417,8 @@ grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   font-size: 1.25em;
   font-weight: normal;
 }
+
+
 
 @media screen and (max-width: 576px) {
   
