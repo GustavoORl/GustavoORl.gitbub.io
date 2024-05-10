@@ -40,17 +40,20 @@ body {
   background-color: rgba(35, 29, 32, 0.61);
   border: 1px solid black;
   h1 {
-    font-size: 10rem; 
+/*     font-size: 10rem;  */
+	  font-size: calc(6rem + 5vw);
     color: white;
   }
   
   h2 {
-    font-size: 2em;     
+/*     font-size: 2em;      */
+	  font-size: calc(0.8rem + 2vw);
     color: white;
   }
   
   p {
-    font-size: 0.7em;
+    /* font-size: 0.7em; */
+    font-size: calc(0.8rem + 1vw);
     color:white;
   }
 }
@@ -78,12 +81,14 @@ align-items: center;
     "baixo-esq";  
   h1{
     color: #002c53;
-    font-size: 3rem;
+    /* font-size: 3rem; */
+    font-size: calc(0.8rem + 2vw);
     padding-bottom: 30px;
   }
   h2{
     color:white;
     text-align: start;  
+    font-size: calc(0.8rem + 1vw);
     padding: 15px;
     padding-left: 100px;
 
@@ -93,6 +98,7 @@ align-items: center;
     color: white;
     padding: 5px;
     text-align:start;
+    font-size: calc(0.7rem + 0.7vw);
     padding-left: 100px;
     
     
@@ -100,7 +106,8 @@ align-items: center;
   p{
     text-align: justify;
     padding: 20px;
-    font-size: 15px;
+    /* font-size: 15px; */
+    font-size: calc(0.5rem + 0.5vw);
   }
 
 }
@@ -147,19 +154,24 @@ align-items: center;
   background-color: rgba(35, 29, 32, 0.61);
   list-style-position: inside; 
   padding-top: 50px;
-  /*display: flex;
-  justify-content: center;*/
+  display: flex;
+  justify-content: center;
 }
+
+/* .baixo-dir > ul{
+  padding: 0px;
+} */
 
 
 .container-4{
   border: 1px solid black;
 
     h1{
-      font-size: 7rem;
+      /* font-size: 7rem; */
+      font-size: calc(2rem + 2vw);
       color: #002c53;
-       padding-top: 100px; 
-       padding-left: 100px;
+       /* padding-top: 100px; 
+       padding-left: 100px; */
     }
     h2{
       font-size: 5rem;
@@ -187,15 +199,17 @@ align-items: center;
 
 .texto1{
   position: relative;
-  display:block;
-  text-align: justify;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  /* text-align: justify; */
   height: 450px;
 }
 .texto2{
   display: flex;
   align-items: center;
   justify-items: center;
-  padding-right: 100px;
+  /* padding-right: 100px; */
   
 }
 
@@ -216,6 +230,7 @@ align-items: center;
 
 .cima {
   display: grid;
+  align-items: center;
   grid-template-columns: 1fr 1fr;
   position: relative;
   grid-area: cima;
