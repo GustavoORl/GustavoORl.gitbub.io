@@ -356,7 +356,6 @@ grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 .ajuda{
   grid-area: ajuda;  
-  background: url("./fotos/pix.jpg");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
