@@ -454,20 +454,21 @@ grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
     height: 75vw;
-    h1{font-size: 10px;}
-    h2{font-size: 10px;}
+    h1{font-size: 30px;}
+    h2{font-size: 15px;}
+    p{font-size: 10px;}
   }
   .container-2{
     display:grid;
     grid-template-columns: 1fr;
-    h1{font-size: 10px;}
-    p{font-size: 10px;}
+    h1{font-size: 20px;}
+    p{font-size: 12px;}
 
     .baixo-esq{
       display: grid;
       justify-content: center;
-      li{padding-left: 0px; font-size: 10px;}
-      h2{font-size: 10px; padding-left: 0;}
+      li{padding-left: 0px; font-size: 15px;}
+      h2{font-size: 15px; padding-left: 0;}
       
     }
  
@@ -483,8 +484,8 @@ grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     .baixo-dir{height: 233px; padding-top:0px;
       display: grid;
       justify-content: center;
-      li{padding-left: 0px; font-size: 10px;}
-      h2{font-size: 10px; padding-left: 0;}}
+      li{padding-left: 0px; font-size: 15px;}
+      h2{font-size: 15px; padding-left: 0;}}
   }
   .container-4{
     .cima{
