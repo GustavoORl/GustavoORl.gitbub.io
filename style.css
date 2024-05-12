@@ -296,10 +296,11 @@ grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   background-color: #f5f5f5;
 }
 .embaixo{
+  width: 100%;
   grid-area: embaixo;
   background-color: #002c53;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
   border: 1px solid black;
   P{font-size: calc(0.5rem + 0.5vw);}
@@ -323,7 +324,26 @@ grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 .fa-tiktok:hover{
   transform: scale(1.13);
+  
 }
+
+
+.contato{
+  h3{font-size: calc(0.8rem + 0.5vw);}
+  position: absolute;
+  right: 50px;
+  text-align: center;
+  p{padding: 5px; color: #f5f5f5;}
+  h3{color:#f5f5f5}
+}
+
+.embaixo > hr{
+  writing-mode: vertical-rl;
+  height: 80px;
+  width: 1px;
+  
+}
+
 .botao2{
   position: absolute;
   bottom: -10px;
@@ -356,6 +376,7 @@ grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 .ajuda{
   grid-area: ajuda;  
+  background: url("./fotos/pix.jpg");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
