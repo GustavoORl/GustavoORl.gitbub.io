@@ -529,10 +529,12 @@ grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     .embaixo{
       height: 240px;
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-      i{padding:0;}
+      grid-template-columns: 1fr 3fr;
       p{font-size: 10px;}
-
+    }
+    .redes{
+      display: grid;
+      align-content: space-around;
     }
   
 }
