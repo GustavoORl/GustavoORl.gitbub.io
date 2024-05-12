@@ -40,6 +40,6 @@
 <h2>DESENVOLVIDO POR: <a href="https://github.com/GustavoORl"> GUSTAVO RIBEIRO </a></h2>
 
 <h3>CONCLUSÃO</h3>
-<p>Projeto criado puramente para ajudar uma amiga a realizar um sonho! Agradeço a todos que visualizaram ou que mandaram algum feedback, sou grato a todos!</p>
+<p>Projeto criado puramente para ajudar uma amiga a realizar um sonho. Agradeço a todos que visualizaram ou que mandaram algum feedback, sou grato a todos!</p>
 
 
