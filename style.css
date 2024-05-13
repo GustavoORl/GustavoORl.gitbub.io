@@ -376,7 +376,7 @@ grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 .ajuda{
   grid-area: ajuda;  
-  background: url("./fotos/Qrcode.jpeg");
+  background: url("./fotos/Qrcode.jpg");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
