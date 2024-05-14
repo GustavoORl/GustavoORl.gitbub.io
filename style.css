@@ -546,16 +546,40 @@ grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
    .rodape{p{font-size:10px};}
 }
 @media screen and (min-width:576px) and (max-width:767px) {
-  
+
+  .pagina-1{
+    background-size: cover;
+    background-position: 20%;
+  }
+
+  .container-2{
+    h1{font-size: calc(1rem + 1vw);}
+    p{font-size: calc(0.5 + 0.7vw); padding-top: 10px;
+    
+  }
+  .baixo-esq{
+   ul{display: grid; justify-content: center;}
+   li{padding-left: 0;}
+   h2{padding-left: 0;}
+  }  
+}
+.container-3{
+  background-position: center;
+}
+.baixo-dir{
+  ul{display: grid; justify-content: space-around;}
+  li{padding-left: 0;}
+  h2{padding-left: 0;}
+}
 }
 
 @media screen and (min-width:768px) and (max-width:991px) {
   
 
-}
+};
 @media screen and (min-width:992px) and (max-width:1199px) {
   
-}
+};
 
 @media screen and (min-width:1200px){
   
