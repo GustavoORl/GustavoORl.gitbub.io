@@ -273,8 +273,70 @@ grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 .emcima{
   grid-area: emcima;
   position: relative;
-  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin:0;
+  background-color: #1a1a1a;
 }
+.carrossel{
+  filter:drop-shadow(0px 0px 10px #000);
+  overflow: hidden;
+  height: 400px;
+  width: 400px;
+}
+
+.container{
+  display: flex;
+  width: 4800px;
+  transition: 0.7s ease-in-out;
+  transform: translateX(0);
+}
+
+.img{
+  width: 400px;
+  height: 400px; 
+}
+
+.bg1{background-image: url("./fotos/carosel1.jpeg");
+   background-size: cover;}
+
+.bg2{background-image: url("./fotos/carosel2.jpeg");
+   background-size: cover;}
+
+.bg3{background-image: url("./fotos/carosel3.jpeg");
+   background-size: cover;
+   background-position: center;}
+
+.bg4{background-image: url("./fotos/carosel4.jpeg");
+   background-size: cover;}
+
+.bg5{background-image: url("./fotos/carosel5.jpg");
+   background-size: cover;
+   background-position-y: 90%;}
+
+.bg6{background-image: url("./fotos/carosel6.jpg");
+   background-size: cover;}
+
+.bg7{background-image: url("./fotos/carosel7.jpg");
+   background-size: cover;}
+
+.bg8{background-image: url("./fotos/carosel8.jpg");
+   background-size: cover;}
+
+.bg9{background-image: url("./fotos/carosel9.jpg");
+   background-size: cover;}
+
+.bg10{background-image: url("./fotos/carosel10.jpg");
+   background-size: cover;}
+
+.bg11{background-image: url("./fotos/carosel11.jpg");
+   background-size: cover;}
+
+.bg12{background-image: url("./fotos/carosel12.jpg");
+   background-size: cover;}
+
+
 .embaixo{
   width: 100%;
   grid-area: embaixo;
@@ -492,7 +554,7 @@ grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     h3{font-size: 15px;}
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
     grid-template-areas: "lateral""emcima""embaixo";
 
     .lateral{
@@ -503,7 +565,12 @@ grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
       
     }
     .emcima{
-      height: 240px;
+      height: 100%;
+    }
+      
+    .img{
+      width: 100%;
+      height: 400px;
     }
   
     .embaixo{
@@ -647,6 +714,5 @@ grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
 
   };
-
 
 
