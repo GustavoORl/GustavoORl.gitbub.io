@@ -3,13 +3,29 @@
   padding: 0;
   margin: 0;
   font-family: 'Montserrat';
+  scrollbar-width: auto;
+  scrollbar-color: #c0c0c0 #373737;
 }
 
 @font-face{
   font-family: "Montserrat";
   src: url('./fontes/Montserrat-VariableFont_wght.ttf');
 }
+ 
+  *::-webkit-scrollbar {
+    width: 15px;
+  }
 
+  *::-webkit-scrollbar-track {
+    background: #373737;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #c0c0c0;
+    border-radius: 10px;
+    border: 3px solid #c0c0c0;
+  }
+  
 
 body {
   background: grey;
@@ -380,8 +396,6 @@ grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   p:hover{transform: scale(1.13);}
   a{text-decoration: none;} 
 }
-
-  
 
 .embaixo > hr{
   writing-mode: vertical-rl;
