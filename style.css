@@ -574,7 +574,7 @@ grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     .texto2{
       padding: 0px;
     }
-    .botao1{left:10vw;}
+    .botao1{left:8vw;}
    
     h1{font-size: 30px; padding: 0;}
     h2{font-size: 10px; padding: 0; display:block;}
@@ -587,12 +587,22 @@ grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
       grid-template-rows:1fr 1fr 1fr  ;
       grid-template-areas: "a""b""c";
     }
+    .a{
+      iframe{width: 90vw; height: 300px; padding: 10px; border: none;}
+ 
+    }
+    .b{
+      iframe{width: 90vw; height: 300px; padding: 10px; border: none;}
+    }
+    .c{
+      iframe{width: 90vw; height: 300px; padding: 10px; border: none;}
+    }
   }
   .container-5{
     h3{font-size: 15px;}
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-rows: 400px 2fr 1fr;
     grid-template-areas: "lateral""emcima""embaixo";
 
     .lateral{
@@ -662,6 +672,22 @@ grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   
 }
 
+.container-4{
+  .abaixo{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "a""b""c";
+  }  
+  .a{
+    iframe{width: 90vw; height: 400px; padding: 20px; border: none;}
+  }
+  .b{
+    iframe{width: 90vw; height: 400px; padding: 20px; border: none;}
+  }
+  .c{iframe{width: 90vw; height: 400px; padding: 20px; border: none;}}
+}
+
 .container-5{
   .lateral{background-position: center;}
 
@@ -703,6 +729,23 @@ grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   
 } 
 
+.container-4{
+  .abaixo{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "a""b""c";
+  }  
+  .a{
+    iframe{width: 90vw; height: 500px; padding: 20px; border: none;}
+  }
+  .b{
+    iframe{width: 90vw; height: 500px; padding: 20px; border: none;}
+  }
+  .c{iframe{width: 90vw; height: 500px; padding: 20px; border: none;}}
+}
+}
+
  .container-5{
   .lateral{background-position: center;} 
   .embaixo{
@@ -711,7 +754,7 @@ grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   } 
 } 
 
-}
+
 
 @media screen and (min-width: 992px) and (max-width: 1199px)  {
 
