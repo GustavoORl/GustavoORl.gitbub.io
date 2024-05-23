@@ -240,24 +240,44 @@ align-items: center;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: "a b c ";
+  overflow: hidden;
 }
+
 
 .a {
   grid-area: a;
   background-color: #002c53;
   padding-top: 20px;
+  a{text-decoration: none;
+    color:white; 
+    background-color: #002c53; padding: 14px; 
+    border-radius: 15px;
+    border: white solid 1px;
+    box-shadow: 1px 1px 1px 1px black;}
 }
 
 .b {
   grid-area: b;
   background-color: #002c53;
   padding-top: 20px;
+  a{text-decoration: none;
+    color:white; 
+    background-color: #002c53; padding: 14px; 
+    border-radius: 15px;
+    border: white solid 1px;
+    box-shadow: 1px 1px 1px 1px black;}
 }
 
 .c {
   grid-area: c;
   background-color: #002c53;
   padding-top: 20px;
+  a{text-decoration: none;
+    color:white; 
+    background-color: #002c53; padding: 14px; 
+    border-radius: 15px;
+    border: white solid 1px;
+    box-shadow: 1px 1px 1px 1px black;}
 }
 
 
@@ -732,4 +752,5 @@ grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
 
   };
+
 
