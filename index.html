@@ -1,735 +1,161 @@
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  font-family: 'Montserrat';
-  scrollbar-width: auto;
-  scrollbar-color: #c0c0c0 #373737;
-}
 
-@font-face{
-  font-family: "Montserrat";
-  src: url('./fontes/Montserrat-VariableFont_wght.ttf');
-}
- 
-  *::-webkit-scrollbar {
-    width: 15px;
-  }
+<!DOCTYPE html>
+<html lang="pt-BR">
 
-  *::-webkit-scrollbar-track {
-    background: #373737;
-  }
-
-  *::-webkit-scrollbar-thumb {
-    background-color: #c0c0c0;
-    border-radius: 10px;
-    border: 3px solid #c0c0c0;
-  }
-  
-
-body {
-  background: grey;
-}
-
-.pagina{
-  margin: 0px 2rem;
-  -webkit-box-shadow: -3px 10px 10px 6px rgba(0,0,0,0.65);
-  -moz-box-shadow: -3px 10px 10px 6px rgba(0,0,0,0.65);
-  box-shadow: -3px 10px 10px 6px rgba(0,0,0,0.65);
- 
-  
-} 
-
-.pagina-1 {
-
-  background: url('https://www.caraguatatuba.sp.gov.br/pmc/wp-content/uploads/2017/07/35810301490_9eeb94b3cd_o.jpg'); 
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.container-1 {
-  height: 650px;
-  display: grid;
-  grid-template-columns: 3fr 3fr 5fr;
-  background-color: rgba(35, 29, 32, 0.61);
-  border: 1px solid black;
-  h1 {
-	  font-size: calc(6rem + 5vw);
-    color: white;
-  }
-  
-  h2 {
-	  font-size: calc(0.8rem + 2vw);
-    color: white;
-  }
-  
-  p {
-    font-size: calc(0.8rem + 1vw);
-    color:white;
-  }
-}
-
-.menu-esquerdo{
- display: flex;
- justify-content: center;
- align-items: center;
-}
-
-.menu-direito{
-display: flex;
-justify-content: center;
-align-items: center;
-
-}
-
-.container-2{
-  display: grid;
-  border: 1px solid black;
-  grid-template-columns: 4fr 3fr;
-  grid-template-rows:350px 300px ;
-  grid-template-areas:
-    "cima-esq"
-    "baixo-esq";  
-  h1{
-    color: #002c53;
-    font-size: calc(0.8rem + 2vw);
-    padding-bottom: 30px;
-  }
-  h2{
-    color:white;
-    text-align: start;  
-    font-size: calc(0.8rem + 1vw);
-    padding: 15px;
-
-  }
-  li{
+<head>
     
-    color: white;
-    padding: 5px;
-    text-align:start;
-    font-size: calc(0.6rem + 0.6vw); 
-  }
-
-  p{
-    text-align: justify;
-    padding: 20px;
-    font-size: calc(0.5rem + 0.5vw);
-  }
-
-}
-
-.container-3{
-  background: url('https://www.caraguatatuba.sp.gov.br/pmc/wp-content/uploads/2019/06/Foto-2-1-e1560189789305.jpg');
-  background-size: cover;
-  background-repeat: repeat;
-  height: 650px;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows:350px 300px ;
-  grid-template-areas:
-    "cima-dir"
-    "baixo-dir";  
-}
-
-
-.cima-esq {
-  grid-area: cima-esq;
-  background-color: #f5f5f5;
-  padding-top: 50px;
-  border: 1px solid black;
-}
-
-.cima-dir {
-  grid-area: cima-dir;
-  background-color: rgba(35, 29, 32, 0.61);
-}
-
-.baixo-esq {
-  grid-area: baixo-esq;
-  background-color: #002c53;
-  list-style-position: inside; 
-  border: 1px solid black;
-  display: grid;
-  align-items: center;
-}
-
-.baixo-dir {
-  grid-area: baixo-dir;
-  background-color: rgba(35, 29, 32, 0.61);
-  list-style-position: inside; 
-  padding-top: 50px;
-  display: grid;
-  justify-content: center;
-  
-}
-
-.container-4{
-  border: 1px solid black;
-
-    h1{
-      font-size: calc(2rem + 2vw);
-      color: #002c53;
-    }
-    h2{
-      font-size: 5rem;
-      display: flex;
-      text-align: start;
-      color: #002c53;
-      position: absolute;
-      top: 195px;
-      left: 125px;
-    }
-    h3{
-      color: white;
-      font-size: 18px;
-    }
-    p{
-      padding:50px;
-      font-size: 15px;
-
-    }
-    li{
-      list-style-position: inside; 
-      color: white;
-    }
-}
-
-.texto1{
-  position: relative;
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  height: 450px;
-}
-.texto2{
-  display: flex;
-  align-items: center;
-  justify-items: center;
-  padding: 20px
-  
-}
-
-.botao1{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  bottom: -10px;
-  left: 100px;
-  height: 2px;
-  width: 250px;
-  background-color: #002c53;
-  border: 18px solid #002c53;
-  border-radius: 10px;
-}
-
-
-.cima {
-  display: grid;
-  align-items: center;
-  grid-template-rows: 150px 1fr;
-  grid-template-columns: 1fr;
-  padding: 40px;
-  position: relative;
-  grid-area: cima;
-  background-color: #f5f5f5;
-  border: 1px solid black;
-
-}
-.abaixo{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas: "a b c ";
-}
-
-.a {
-  grid-area: a;
-  background-color: #002c53;
-  padding-top: 20px;
-}
-
-.b {
-  grid-area: b;
-  background-color: #002c53;
-  padding-top: 20px;
-}
-
-.c {
-  grid-area: c;
-  background-color: #002c53;
-  padding-top: 20px;
-}
-
-
-
-
-.container-5{
-display:grid;
-border: 1px solid black;
-grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows:500px 150px ;
-  grid-template-areas:
-    "lateral lateral emcima emcima emcima"
-    "lateral lateral embaixo embaixo embaixo";  
-}
-
-.dolado{
-  height: 100%;
-  background-color: rgba(35, 29, 32, 0.61);
-}
-.lateral{
-  grid-area: lateral;
-  background: url('./fotos/foto.png');
-  background-size: cover;
-  background-position: center;
-  border: 1px solid black;
-  
-
-}
-.emcima{
-  grid-area: emcima;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin:0;
-  background-color: #1a1a1a;
-}
-.carrossel{
-  filter:drop-shadow(0px 0px 10px #000);
-  overflow: hidden;
-  height: 400px;
-  width: 400px;
-}
-
-.container{
-  display: flex;
-  width: 4800px;
-  transition: 0.7s ease-in-out;
-  transform: translateX(0);
-}
-
-.img{
-  width: 400px;
-  height: 400px; 
-}
-
-.bg1{background-image: url("./fotos/carosel1.jpeg");
-   background-size: cover;}
-
-.bg2{background-image: url("./fotos/carosel2.jpeg");
-   background-size: cover;}
-
-.bg3{background-image: url("./fotos/carosel3.jpeg");
-   background-size: cover;
-   background-position: center;}
-
-.bg4{background-image: url("./fotos/carosel4.jpeg");
-   background-size: cover;}
-
-.bg5{background-image: url("./fotos/carosel5.jpg");
-   background-size: cover;
-   background-position-y: 90%;}
-
-.bg6{background-image: url("./fotos/carosel6.jpg");
-   background-size: cover;}
-
-.bg7{background-image: url("./fotos/carosel7.jpg");
-   background-size: cover;}
-
-.bg8{background-image: url("./fotos/carosel8.jpg");
-   background-size: cover;}
-
-.bg9{background-image: url("./fotos/carosel9.jpg");
-   background-size: cover;}
-
-.bg10{background-image: url("./fotos/carosel10.jpg");
-   background-size: cover;}
-
-.bg11{background-image: url("./fotos/carosel11.jpg");
-   background-size: cover;}
-
-.bg12{background-image: url("./fotos/carosel12.jpg");
-   background-size: cover;}
-
-
-.embaixo{
-  width: 100%;
-  grid-area: embaixo;
-  background-color: #002c53;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  border: 1px solid black;
-  P{font-size: calc(0.5rem + 0.5vw);}
-  i{
-    padding: 10px;
-    font-size: calc(0.7rem + 0.7vw);
-  }
-}
-.fa-facebook:hover{
-  transform: scale(1.13);
-  
-}
-.fa-instagram:hover{
-  transform: scale(1.13);
-}
-.fa-x-twitter:hover{
-  transform: scale(1.13);
-}
-.fa-youtube:hover{
-  transform: scale(1.13);
-}
-.fa-tiktok:hover{
-  transform: scale(1.13);
-  
-}
-
-
-.contato{
-  h3{font-size: calc(0.8rem + 0.5vw);}
-  position: absolute;
-  right: 50px;
-  text-align: center;
-  p{padding: 5px; color: #f5f5f5;text-decoration: none;}
-  h3{color:#f5f5f5}
-  p:hover{transform: scale(1.13);}
-  a{text-decoration: none;} 
-}
-
-.embaixo > hr{
-  writing-mode: vertical-rl;
-  height: 80px;
-  width: 1px;
-  
-}
-
-.botao2{
-  position: absolute;
-  bottom: -10px;
-  left: 60px;
-  display: flex;
-  align-items: center;
-  height: 20px;
-  border: 15px solid #002c53;
-  border-radius: 10px;
-  color: white;
-  h3{
-    font-size: calc(0.6rem + 0.7vw);
-  }
-
-}
-.container-6{
-  height:1000px;
-  background-color: #f5f5f5;
-  display: grid;
-  grid-template-rows: 2fr 2fr;
-  grid-template-areas: "banner""ajuda";
-  padding-bottom: 100px;
-}
-.banner{
-  grid-area: banner;
-  background: url("./fotos/fundo.png");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-.ajuda{
-  grid-area: ajuda;  
-  background: url("./fotos/Qrcode.jpg");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  
- }
-
- .rodape{
-  height: 100px;
-  background-color: #002c53;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: "bloco1 bloco2";
-  p{color: #f5f5f5;}
-
- }
- .bloco1{
- grid-area: bloco1;
- display: flex;
- align-items: center;
- padding-left: 20px;
- 
- }
- .bloco2{
-  grid-area: bloco2;
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  padding-right: 20px;
- }
- .fa-github{
-  margin:20px;
-  padding: 10px;
-  font-size: 40px;}
-
- .fa-github:hover{
-  transform: scale(1.13);
- }
-
-
-.item {
-  text-align: center;
-  font-size: 1.25em;
-  font-weight: normal;
-  
-}
-.lado {
-  text-align: center;
-  font-size: 1.25em;
-  font-weight: normal;
-}
-
-.baixo {
-  text-align: center;
-  font-size: 1.25em;
-  font-weight: normal;
-}
-
-
-
-@media screen and (max-width: 576px) {
-  
-  .pagina{
-   overflow: hidden;
-   margin: 0 1em;
-  }
-  .pagina-1{
-    background-size: couver;
-    height: 75vw;
-  }
-  .container-1{
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    height: 75vw;
-    h1{font-size: 30px;}
-    h2{font-size: 15px;}
-    p{font-size: 10px;}
-  }
-  .container-2{
-    display:grid;
-    grid-template-columns: 1fr;
-    h1{font-size: 20px;}
-    p{font-size: 12px;}
-
-    .baixo-esq{
-      display: grid;
-      justify-content: center;
-      li{padding-left: 0px; font-size: 15px;}
-      h2{font-size: 15px; padding-left: 0;}
-      
-    }
- 
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    
-  }
-  .container-3{
-    background-size: cover;
-    background-repeat: no-repeat;
-    grid-template-rows: 233px 233px;
-    height: 466px;
-    .cima-dir{height: 233px;}
-    .baixo-dir{height: 233px; padding-top:0px;
-      display: grid;
-      justify-content: center;
-      li{padding-left: 0px; font-size: 15px;}
-      h2{font-size: 15px; padding-left: 0;}}
-  }
-  .container-4{
-    .cima{
-      display: grid;
-      grid-template-rows: 50px 400px;
-      grid-template-columns: 1fr;
-      justify-items: center;
-      padding: 0px;
-    }
-    .texto2{
-      padding: 0px;
-    }
-    .botao1{left:10vw;}
-   
-    h1{font-size: 30px; padding: 0;}
-    h2{font-size: 10px; padding: 0; display:block;}
-    p{font-size: 10px;}
-    iframe{height: 300px;}
+    <title>Ellen</title>
+    <link rel="icon" href="">
+    <link rel="stylesheet" href="./style.css">
+	<script src="https://kit.fontawesome.com/953944b295.js" crossorigin="anonymous"></script>
 
-    .abaixo{
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows:1fr 1fr 1fr  ;
-      grid-template-areas: "a""b""c";
-    }
-  }
-  .container-5{
-    h3{font-size: 15px;}
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2fr 1fr;
-    grid-template-areas: "lateral""emcima""embaixo";
+</head>
+<body>
 
-    .lateral{
-      height: 100%;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position-y: 10%;
-      
-    }
-    .emcima{
-      height: 100%;
-    }
-      
-    .img{
-      width: 100%;
-      height: 400px;
-    }
+<div class="pagina">
+
+	<div class="pagina-1">
+	<section class="container-1">	
+
+	<div class="item menu-esquerdo"> <h1> Olá, </h1> </div>
+	<div class="item principal"></div>
+	<div class="item menu-direito"> <h2>meu nome é Ellen Cristina.<br><p>sou paratleta olimpica,</p><p>e preciso da sua ajuda!</p></h2></div>
+	
   
-    .embaixo{
-      height: 240px;
-      display: grid;
-      grid-template-columns: 1fr 3fr;
-      p{font-size: 10px;}
-    }
-    .redes{
-      display: grid;
-      align-content: space-around;
-    }
-  
-}
-   .container-6{
-    height: 600px;
-    padding-bottom: 100px;
-  }
-   .rodape{p{font-size:10px};}
-}
-@media screen and (min-width:576px) and (max-width:767px) {
+	</section>
+	</div>
 
-  .pagina-1{
-    background-size: cover;
-    background-position: 20%;
-  }
+<div class="pagina-2">
+	<section class="container-2">
 
-  .container-2{
-    h1{font-size: calc(1rem + 1vw);}
-    p{font-size: calc(0.5 + 0.7vw); padding-top: 10px;
-    
-  }
-  .baixo-esq{
-   ul{display: grid; justify-content: center;}
-   li{padding-left: 0;}
-   h2{padding-left: 0;}
-  }  
-}
-.container-3{
-  background-position: center;
-}
-.baixo-dir{
-  li{padding-left: 0; }
-  h2{padding-left: 0; font-size: calc(1rem + 0.8vw)}
-}
+	<div class="lado cima-esq"> <h1>Quem sou eu?</h1> 
+		<p>Sou uma sonhadora em busca de realização, meu objetivo e maior sonho é conquistar uma medalha no Mundial 
+			de Atletismo. No momento esse sonho está parado, pois devido a problemas financeiros não estou conseguindo
+			competir. Sou a atleta representante de uma equipe da minha cidade, devido a falta de treinadores e treinamento
+			não estou conseguindo treinar, recebo apenas o bolsa atleta (programa de incentivo do governo) no valor de 
+			R$ 925,00 oque não é o suficiente para competir.
 
-.cima{
-  grid-template-rows: 150px 1fr;
-  grid-template-columns: 1fr;
-  padding: 40px;
-  
-}
+		</p> </div>
+	<div class="lado baixo-esq"> 
+	<ul>	<h2>Modalidades disputadas</h2>
+		<li>Arremesso de peso</li>
+		<li>Lançamento de Club</li>
+		<li>Natação</li>
+		<li>ciclismo</li>
+	</ul>
+	</div>
 
-.container-5{
-  .lateral{background-position: center;}
+	<div class="container-3">
+	<div class="lado cima-dir"></div>
+	<div class="lado baixo-dir"> 
+	<ul>	<h2>Premiações</h2>
+		<li>Brasileiro 2x</li>
+		<li>Circuito Loterias Caixa +9x</li>
+		<li>meeting loterias caixa</li>
+		<li>Paralimpiadas Universitárias 2x</li>
+	</ul> 
+	</div>
+	</div>
+	</section>
+</div>
 
-  .embaixo{
-    .redes{display:grid;}
-    grid-template-columns: 1fr 3fr;
-  }
-}
-}
+	<section class="container-4">
 
-@media screen and (min-width:768px) and (max-width:991px) {
-  .pagina-1{
-    background-size: cover;
-    background-position: 20%;
-  .container-1{
-    h1{font-size: calc(5rem + 5vw); padding-left: 30px}
-    h2{padding-right: 10px}
-  }
-  }
+	<div class="baixo cima"><div class="texto1"><h1>Minha história</h1>
+	 <!-- <p>Lembro-me como se fosse ontem, Aos 3 anos entrava naquele fusca vermelho e me mudava de vez de Cunha, cidade 
+		a qual eu nascera. A partir desse momento minha vida recomeçara em Caraguatatuba, no litoral de São Paulo.
+		Minha infancia foi repleta de dificuldades, pouco tempo depois de me mudar, passei pela situação mais dificil
+		da minha vida, um tombo que mudaria de vez minha vida.  -->
+	<!-- </p> -->
+	</div>
 
-  .container-2{
-    h1{font-size: calc(1rem + 1vw);}
-    p{font-size: calc(0.5rem + 0.7vw); padding-top: 10px;
-  }
-}
-.baixo-esq > ul{
-   display: grid;
-   justify-content: center;
-    align-content: center;}
+	<div class="texto2">
+		<iframe width="100%" height="400" src="https://www.youtube.com/embed/bQBbRWo0j5g" title="Relaxing Medieval Music - Bard/Tavern Ambience, Fantasy Celtic Music, Sleeping Tavern BGM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+	</div> 
 
-.container-3{
-  background-position: center;
-} 
+	<div class="botao1"><h3>últimos campeonatos</h3></div>
+	</div>
+	<div class="abaixo">
+	<div class="baixo a">
+		<iframe src="https://www.caraguatatuba.sp.gov.br/pmc/2022/05/paratleta-de-caraguatatuba-conquista-tres-medalhas-no-campeonato-brasileiro-loterias-caixa-de-atletismo/">
 
-.cima{
-  grid-template-rows: 150px 1fr;
-  grid-template-columns: 1fr;
-  padding: 40px;
-  
-} 
+		</iframe>
+	</div>
+	<div class="baixo b">
+		<iframe src="https://www.caraguatatuba.sp.gov.br/pmc/2022/05/paratleta-de-caraguatatuba-conquista-tres-medalhas-no-campeonato-brasileiro-loterias-caixa-de-atletismo/">
 
- .container-5{
-  .lateral{background-position: center;} 
-  .embaixo{
-  .redes{display:grid;}
-    grid-template-columns: 1fr 2fr;
-  } 
-} 
+		</iframe>
+		</div>	
+	<div class="baixo c">
+		<iframe src="https://www.caraguatatuba.sp.gov.br/pmc/2018/08/paratleta-de-caraguatauba-bate-recorde-das-americas-no-arremesso-de-peso/">
 
-}
+		</iframe>
+	</div>
+	</div>
+	</section>
 
-@media screen and (min-width: 992px) and (max-width: 1199px)  {
+	<section class="container-5">
+		
+		<div class="lado lateral"><div class="dolado"></div></div>
+		<div class="lado emcima">
 
-  .container-1{
-    height: 1000px}
-  .container-2{
-    height: 1000px;
-    grid-template-columns: 4fr 3fr;
-    grid-template-rows: 550px 450px;
-    h1{font-size: calc(2rem + 2vw);}
-    p{font-size: calc(0.7rem + 0.6vw);}
-    li{font-size: calc(0.7rem + 0.7vw);}
-    .baixo-esq > ul{ display: grid;
-      align-items: center; justify-content: center;}
-    .baixo-dir{padding-top: 130px;}
-  }
+			<div class="carrossel">
+				<div class="container">
+					<div class="img bg1"></div>
+					<div class="img bg2"></div>
+					<div class="img bg3"></div>
+					<div class="img bg4"></div>
+					<div class="img bg5"></div>
+					<div class="img bg6"></div>
+					<div class="img bg7"></div>
+					<div class="img bg8"></div>
+					<div class="img bg9"></div>
+					<div class="img bg10"></div>
+					<div class="img bg11"></div>
+					<div class="img bg12"></div>
+				</div>
+			</div>
+			
+			<div class="botao2"><h3>Acompanhe minhas redes sociais!</h3></div>
+		</div>
+		
+		<div class="lado embaixo">
+			<div class="redes">
+		<a href="https://www.instagram.com/ellencristinadiasatleta/"><i class="fa-brands fa-instagram" style="color: white"><p>instagram</p></i></a>
+		<a href="https://www.facebook.com/ellen.diasbraga/"><i class="fa-brands fa-facebook" style="color: white;"><p>facebook</p></i></a>
+		<a href="https://www.tiktok.com/@ellendiasbraga830"><i class="fa-brands fa-tiktok" style="color: #ffffff;"><p>tiktok</p></i></a>
+		</div>
+        <hr>
+		<div class="contato">
+		<h3>contato</h3>
+		<a href="mailto:Ellen_cristinadias@hotmail.com"><p>Ellen_cristinadias@hotmail.com</p></a>
+		<a href="https://api.whatsapp.com/send?phone=5512996755562"><p>(12)99675-5562</p></a>
+		</div>
+	</div>
 
-  .container-3{
-    height: 1000px;
-    grid-template-columns: 1fr;
-    grid-template-rows: 550px 450px;
-    background-position: center;
-  }
-  .cima{
-    height: 700px;}
-  .abaixo{
-    height: 200px;
-  }
-  .container-5{
-    grid-template-rows: 750px 250px;
-  }
-  } 
+	</section>
 
-  @media screen and (min-width: 1200px){
+	<section class="container-6">
+		<div class="banner"></div>
+		<div class="ajuda"></div>
 
-    .baixo-esq > ul{
-      display:grid; justify-content: center; align-content: center;
-    }
 
-  };
+	</section>
 
+
+	<div class="rodape">
+		<div class="bloco1"><p>Criado em 2024 por: Gustavo Ribeiro</p></div>
+		<div class="bloco2"><p>Siga-me </p><a href="https://github.com/GustavoORl"><i class="fa-brands fa-github" style="color: #ffffff;"></i></a></div>
+	</div>
+	
+</div>
+
+
+<script src="./script.js"></script>
+</body>
+
+
+</html>
